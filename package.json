@@ -1,0 +1,20 @@
+{
+	"name": "react-express-app",
+	"version": "1.0.0",
+	"description": "Full Stack Application using React JS and Express Js",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "Harshit Pandit",
+	"license": "ISC",
+	"dependencies": {
+		"concurrently": "^7.1.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.3"
+	}
+}
